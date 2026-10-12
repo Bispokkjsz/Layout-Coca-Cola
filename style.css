@@ -1,40 +1,102 @@
 *{
-    padding: 0px;
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.pato{
+body{
     display: flex;
+    flex-direction: column;
     height: 100vh;
-
-    background: linear-gradient(#CF2425, #d46266,#CF2425);
+     background: linear-gradient(to bottom, #cf2425 0%,   #df5e62 55%, #db484c 100%);
 }
 
-.macaco {
-    justify-content: center;
+.header{
     display: flex;
+    width: 100%;
+    height: 5vh;
+}
+
+.menu{
+    height: 19px;
+    width: 97px;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.main{
+    display: flex;
+    flex-grow: 1;
+    align-content: center;
     align-items: center;
+    justify-content: center;
+    position: relative;
+
 }
-.ganso{
-    position: absolute; 
-    left: 1100px;
-    top: 150px;
-    height: 80vh
+
+
+.coca{
+    height: 636px;
+    width: 100%;
 }
-.porco{
+
+.garrafa{
+    height: 755px;
+    width: 201px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     position: absolute;
-    left: 10px;
+}
+
+.texto{
+    height: 88px;
+    width: 212 px;
+    left: 20%;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.footer{
+    display: flex;
+    width: 100%;
+    height: 5vh;
+    align-items: end;
+    align-content: left;
+    justify-content: flex-end;
+}
+
+.map{
+    height: 48px;
+    width: 64px;
+    margin-right: 50px;
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    .menu{
+        margin-left: 30px;
+
+}
+.texto{
+    transform: translate(70px, 25px);
     top: 10px;
+    width: 75px;
+    height: 45px;
+    text-align: center;
 }
-.dog{
-    position:absolute;
-    left: 730px;
-    top: 600px;
-    height: 10vh
+.coca{
+    height: 150px;
 }
-.cat{
-    position: absolute;
-    right: 95px;
-    top: 1150px;
+
+.garrafa{
+    height: 65vh;
+    width: 35vw; 
+}
+
+.map{
+    margin-right: 40px;
+    margin-bottom: 50px
+}
 }
